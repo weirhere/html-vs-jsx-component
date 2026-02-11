@@ -1,9 +1,11 @@
+/* Global reset to keep spacing consistent across browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base page layout and background */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Flex container that lines up the pricing cards */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Individual pricing card surface */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Vertical stack for title, price, and features */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan name typography */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row: amount and period share a baseline */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +61,38 @@ body {
     align-items: baseline;
 }
 
+/* Larger number styling for the main price */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Smaller, lighter text for the /month label */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Space below the content before the button */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Intro line above the feature list */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Feature list without browser default bullets */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Each feature row aligned with its checkmark */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Visual check icon before each feature label */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,7 @@ body {
     font-weight: 400;
 }
 
+/* Base button styles shared by both plans */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +124,33 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Subtle hover state for the light button */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Active state kept similar so the button does not "jump" */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Primary (dark) button styling for the Pro plan */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Hover state for the primary button */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Active state for the primary button */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* Fixed pill label at the top center of the screen */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +164,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Darker emphasis for the "HTML version" text */
 .page-label strong {
     color: #333;
 }
