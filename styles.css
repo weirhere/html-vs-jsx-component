@@ -150,6 +150,20 @@ body {
     background-color: #333;
 }
 
+.download-button.tertiary {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #c2c1ba;
+}
+
+.download-button.tertiary:hover {
+    background-color: #dbdbd7;
+}
+
+.download-button.tertiary:active {
+    background-color: #dbdbd7;
+}
+
 /* Fixed pill label at the top center of the screen */
 .page-label {
     position: fixed;
